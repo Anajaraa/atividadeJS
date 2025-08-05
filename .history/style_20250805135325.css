@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #030303;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #d1e751;
+  text-shadow: 2px 2px #6d51a0;
+}
+
+.card {
+  background-color: #cc9dbe;
+  padding: 30px 25px;
+  border-radius: 15px;
+  max-width: 750px;
+  width: 100%;
+  box-shadow: 0 0 25px rgba(209, 231, 81, 0.3);
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative; 
+  
+  word-wrap: break-word;
+}
+
+.numero {
+  font-size: 2rem;
+  color: #d1e751;
+  font-weight: bold;
+}
+
+.descricao {
+  font-size: 1.2rem;
+  color: #0c0c0c;
+  text-align: left;
+  flex: 1;
+  position: relative;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.descricao strong {
+  color: #8c4eff;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background-color: #0c1111;
+  color: #ffffff;
+}
+
+.toggle {
+  display: none;
+}
+
+.resposta-btn {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0c0b0b;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  
+}
+
+.resposta {
+  display: none;
+  background-color: #2c2c2c;
+  color: #fed4ff;
+  padding: 20px;
+  border-radius: 15px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin-top: 15px;
+  width: 100%;              
+  box-sizing: border-box;
+  overflow-x: auto;         
+  max-width: 100%;          
+  border: 2px solid transparent;
+}
+
+pre, code {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+
+
+
+.toggle:checked + .resposta-btn + .resposta {
+  display: block;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercícios de JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Exercício de JavaScript</h1>
+
+    <!-- Exercício 1 -->
+    <section class="card">
+      <p class="numero">1.</p>
+      <div class="descricao">
+        <p>Crie um programa que solicite ao usuário seu nome e, em seguida, exiba no console:<br>
+        <strong>“Olá, [nome]! Seja bem-vindo(a).”</strong></p>
+        <span class="resposta-btn" onclick="toggleResposta(1)">Resposta</span>
+      </div>
+    </section>
+    <section class="card resposta-card" id="resposta-1">
+      <pre><code>const nome = prompt("Digite seu nome:");
+console.log(`Olá, ${nome}! Seja bem-vindo(a).`);</code></pre>
+    </section>
+
+    <!-- Exercício 2 -->
+    <section class="card">
+      <p class="numero">2.</p>
+      <div class="descricao">
+        <p>Solicite ao usuário dois números e exiba no console o resultado da soma entre eles.<br>
+        <strong>Dica: use Number() ou parseInt().</strong></p>
+        <span class="resposta-btn" onclick="toggleResposta(2)">Resposta</span>
+      </div>
+    </section>
+    <section class="card resposta-card" id="resposta-2">
+      <pre><code>const num1 = prompt("Digite um número:");
+const num2 = prompt("Digite outro número:");
+const soma = parseInt(num1) + parseInt(num2);
+alert(`A soma dos números é: ${soma}`);</code></pre>
+    </section>
+
+    <!-- Exercício 4 -->
+    <section class="card">
+      <p class="numero">4.</p>
+      <div class="descricao">
+        <p>Peça ao usuário um número e exiba no console o dobro desse número.<br>
+        <strong>“Olá, o dobro do número é.”</strong></p>
+        <span class="resposta-btn" onclick="toggleResposta(4)">Resposta</span>
+      </div>
+    </section>
+    <section class="card resposta-card" id="resposta-4">
+      <pre><code>const num = prompt("Digite um número:");
+const doub = parseInt(num) * 2;
+alert(`O dobro do número é: ${doub}`);</code></pre>
+    </section>
+
+    <!-- Exercício 5 -->
+    <section class="card">
+      <p class="numero">5.</p>
+      <div class="descricao">
+        <p>Solicite a base e a altura de um retângulo e exiba a área.<br>
+        <strong>Fórmula: área = base * altura</strong></p>
+        <span class="resposta-btn" onclick="toggleResposta(5)">Resposta</span>
+      </div>
+    </section>
+    <section class="card resposta-card" id="resposta-5">
+      <pre><code>const base = prompt("Digite a base:");
+const altura = prompt("Digite a altura:");
+const area = parseFloat(base) * parseFloat(altura);
+console.log(`A área do retângulo é: ${area}`);</code></pre>
+    </section>
+
+    <!-- Exercício 6 -->
+    <section class="card">
+      <p class="numero">6.</p>
+      <div class="descricao">
+        <p>Peça o preço de um produto e um desconto e exiba o preço com desconto.<br>
+        <strong>Exemplo: R$ 100, desconto 10%, resultado: R$ 90</strong></p>
+        <span class="resposta-btn" onclick="toggleResposta(6)">Resposta</span>
+      </div>
+    </section>
+    <section class="card resposta-card" id="resposta-6">
+      <pre><code>const preco = prompt("Digite o preço do produto:");
+const desconto = prompt("Digite o desconto (%):"); 
+const precoDesconto = parseFloat(preco) - (parseFloat(preco) * parseFloat(desconto) / 100);
+console.log(`O preço com desconto é: ${precoDesconto}`);</code></pre>
+    </section>
+
+    <!-- Exercício 7 -->
+    <section class="card">
+      <p class="numero">7.</p>
+      <div class="descricao">
+        <p>Solicite o primeiro nome e sobrenome e exiba o nome completo.<br>
+        <strong>Ex: "Seu nome completo é: João Silva"</strong></p>
+        <span class="resposta-btn" onclick="toggleResposta(7)">Resposta</span>
+      </div>
+    </section>
+    <section class="card resposta-card" id="resposta-7">
+      <pre><code>const nome = prompt("Digite seu nome:");
+const sobrenome = prompt("Digite seu sobrenome:");
+console.log(`Seu nome completo é: ${nome} ${sobrenome}`);</code></pre>
+    </section>
+
+    <!-- Exercício 8 -->
+    <section class="card">
+      <p class="numero">8.</p>
+      <div class="descricao">
+        <p>Crie um programa que pergunte com <code>confirm()</code> se o usuário quer se cadastrar.<br>
+        Se "OK", peça nome e idade com <code>prompt()</code> e exiba no console.<br>
+        Se "Cancelar", exiba "Cadastro cancelado".</p>
+        <span class="resposta-btn" onclick="toggleResposta(8)">Resposta</span>
+      </div>
+    </section>
+    <section class="card resposta-card" id="resposta-8">
+      <pre><code>const desejaCadastrar = confirm("Você deseja se cadastrar no site?");
+
+if (desejaCadastrar) {
+  const nome = prompt("Digite seu nome completo:");
+  const idade = prompt("Digite sua idade:");
+  console.log("Cadastro realizado com sucesso!");
+  console.log("Nome: " + nome);
+  console.log("Idade: " + idade);
+} else {
+  console.log("Cadastro cancelado pelo usuário.");
+}</code></pre>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Ana | Todos os direitos reservados
+  </footer>
+
+  <script>
+    function toggleResposta(numero) {
+      const resposta = document.getElementById("resposta-" + numero);
+      resposta.style.display = resposta.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia&display=swap');
+/* Reset básico */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #142f30;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #d1e751;
+  text-shadow: 2px 2px #8164b6;
+}
+
+.card {
+  background-color: #1d4242;
+  padding: 30px 25px;
+  border-radius: 15px;
+  max-width: 750px;
+  width: 90%;
+  box-shadow: 0 0 25px rgba(209, 231, 81, 0.3);
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.numero {
+  font-size: 2rem;
+  color: #d1e751;
+  font-weight: bold;
+}
+
+.descricao {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: left;
+}
+
+.descricao strong {
+  color: #8164b6;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background-color: #1a3a3a;
+  color: #ffffff;
+}

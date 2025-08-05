@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercícios de JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Exercício de JavaScript</h1>
+
+    <section class="card">
+      <p class="numero">1.</p>
+      <div class="descricao">
+        <p>Crie um programa que solicite ao usuário seu nome e, em seguida, exiba no console:<br>
+        <strong>“Olá, [nome]! Seja bem-vindo(a).”</strong></p>
+
+        <input type="checkbox" id="resposta1" class="toggle">
+        <label for="resposta1" class="resposta-btn">Resposta</label>
+        <div class="resposta">
+          <pre><code>const nome = prompt("Digite seu nome:");
+console.log(Olá, ${nome}! Seja bem-vindo(a).);</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <p class="numero">2.</p>
+      <div class="descricao">
+        <p>Solicite dois números e exiba a soma no console.<br>
+        <strong>Dica: use Number() ou parseInt().</strong></p>
+
+        <input type="checkbox" id="resposta2" class="toggle">
+        <label for="resposta2" class="resposta-btn">Resposta</label>
+        <div class="resposta">
+          <pre><code>const num1 = prompt("Digite um número:");
+const num2 = prompt("Digite outro número:");
+const soma = parseInt(num1) + parseInt(num2);
+alert(A soma dos números é: ${soma});</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <p class="numero">4.</p>
+      <div class="descricao">
+        <p>Peça um número e exiba o dobro no console.<br>
+        <strong>“Olá, o dobro do número é.”</strong></p>
+
+        <input type="checkbox" id="resposta4" class="toggle">
+        <label for="resposta4" class="resposta-btn">Resposta</label>
+        <div class="resposta">
+          <pre><code>const num = prompt("Digite um número:");
+const doub = parseInt(num) * 2;
+alert(O dobro do número é: ${doub});</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <p class="numero">5.</p>
+      <div class="descricao">
+        <p>Solicite base e altura e exiba a área do retângulo.<br>
+        <strong>Fórmula: área = base * altura</strong></p>
+
+        <input type="checkbox" id="resposta5" class="toggle">
+        <label for="resposta5" class="resposta-btn">Resposta</label>
+        <div class="resposta">
+          <pre><code>const base = prompt("Digite a base:");
+const altura = prompt("Digite a altura:");
+const area = parseFloat(base) * parseFloat(altura);
+console.log(A área do retângulo é: ${area});</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <p class="numero">6.</p>
+      <div class="descricao">
+        <p>Peça o preço e o desconto e exiba o valor com desconto.<br>
+        <strong>Exemplo: R$ 100, 10% → R$ 90</strong></p>
+
+        <input type="checkbox" id="resposta6" class="toggle">
+        <label for="resposta6" class="resposta-btn">Resposta</label>
+        <div class="resposta">
+          <pre><code>const preco = prompt("Digite o preço:");
+const desconto = prompt("Digite o desconto (%):");
+const precoDesconto = parseFloat(preco) - (parseFloat(preco) * parseFloat(desconto) / 100);
+console.log(O preço com desconto é: ${precoDesconto});</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <p class="numero">7.</p>
+      <div class="descricao">
+        <p>Peça nome e sobrenome e exiba o nome completo.<br>
+        <strong>Ex: João Silva</strong></p>
+
+        <input type="checkbox" id="resposta7" class="toggle">
+        <label for="resposta7" class="resposta-btn">Resposta</label>
+        <div class="resposta">
+          <pre><code>const nome = prompt("Digite seu nome:");
+const sobrenome = prompt("Digite seu sobrenome:");
+console.log(Seu nome completo é: ${nome} ${sobrenome});</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <p class="numero">8.</p>
+      <div class="descricao">
+        <p>Use <code>confirm()</code> para perguntar se o usuário quer se cadastrar.<br>
+        Se "OK", peça nome e idade com <code>prompt()</code>.<br>
+        Caso "Cancelar", exiba "Cadastro cancelado".</p>
+
+        <input type="checkbox" id="resposta8" class="toggle">
+        <label for="resposta8" class="resposta-btn">Resposta</label>
+        <div class="resposta">
+          <pre><code>const desejaCadastrar = confirm("Você deseja se cadastrar no site?");
+if (desejaCadastrar) {
+  const nome = prompt("Digite seu nome completo:");
+  const idade = prompt("Digite sua idade:");
+  console.log("Cadastro realizado com sucesso!");
+  console.log("Nome: " + nome);
+  console.log("Idade: " + idade);
+} else {
+  console.log("Cadastro cancelado pelo usuário.");
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Ana | Todos os direitos reservados
+  </footer>
+</body>
+  <script src="script.js"></script>
+</html>
